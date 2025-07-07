@@ -3,15 +3,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FeedbackHub from "./components/FeedbackHub";
 import ProfilePage from "./components/ProfilePage";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/" element={<FeedbackHub />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
